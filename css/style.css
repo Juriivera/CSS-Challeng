@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+
+body {
+    background-color: rgb(78, 88, 145);
+}
+
+
+.heading {
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 5rem;
+}
+
+
+.playground-heading {
+    color: darkcyan;
+}
+
+
+.main {
+    border: 2px solid white;
+    width: 55%;
+    margin: 1rem auto;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+#red {
+    position: relative;
+    background-color: red;
+    border-color: white;
+    animation: header;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes header {
+    0% {top: -200px;}
+    100% {top:0}
+
+}
+
+#yellow {
+    opacity: 0;
+    background-color: yellow;
+    border-color: white;
+    animation: anibtn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anibtn {
+    0% {opacity: 0;} 
+    100% {opacity: 1;}
+}
+   
+
+
+#green {
+    background-color: green;
+    border-color: white;
+    animation: g ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes g {
+    0% {transform: none;} 
+    50% {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
+}
+
+.footer {
+    margin-top: 370px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+   
+}
